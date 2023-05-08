@@ -1,0 +1,7 @@
+@import '../../../styles/custom-variables';
+
+.home{
+    color: map-get($colors, white );
+    font-size: 24px;
+    margin:10% auto 0;
+}

@@ -1,0 +1,25 @@
+@import '../../styles/custom-variables';
+
+.navbar{
+    width: 100%;
+    background-color: map-get($colors, blue-3);
+    padding: 10px 0;
+    border-bottom: 1px solid map-get($colors, blue-1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__search{
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+    }
+    &__logo{
+        height: 80px;
+        padding-right: 30px;
+    }
+    &__theme-logo{
+        height: 40px;
+        padding-left: 50px;
+        padding-right: 15px;
+    }
+}

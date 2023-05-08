@@ -1,0 +1,8 @@
+@import  '../../styles/custom-variables';
+
+.layout{
+    display: flex;
+    justify-content: space-between;
+    background-color: map-get($colors , 'dark-blue');
+    height: 100vh;
+}

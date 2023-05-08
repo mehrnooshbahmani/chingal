@@ -1,0 +1,9 @@
+@import '../../styles/custom-variables';
+
+.modal{
+   border-radius: 24px;
+   background-color: map-get($colors, blue-3);
+   box-shadow: 24px 24px 96px map-get($colors, mostly-black);
+   width: 100%;
+   height: 60vh;
+}

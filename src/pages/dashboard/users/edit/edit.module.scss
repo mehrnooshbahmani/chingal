@@ -1,0 +1,91 @@
+@import '../../../../styles/custom-variables';
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.breadcrumb{
+    padding: 50px 100px 0 0;
+    align-self: flex-start;
+    ol > li > span,li { 
+      color: map-get($colors, white) !important;
+   }
+}
+.edit{
+    width: 25%;
+    padding-top: 80px;
+    &__content{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 20px;
+        &__row{
+            padding-top: 10px;
+        }
+        &__item{
+            :first-child{
+            flex-flow: column;
+            align-items: flex-start;
+            }
+            div > div > ::after {
+                display: none;
+          }
+          div > div > label {
+            height: 22px !important;
+            font-size: 12px !important;
+             color: map-get($colors, white ) !important;
+      }
+        }
+        &__wrapper{
+               width: 100px;
+               height: 100px;
+               border-radius: 50%;
+            &__img{
+                width: 100px;
+                height: 100px;
+                display: block;
+                border-radius: 50%;
+                border: 2px solid map-get($colors, blue-2);
+                position: absolute;
+                object-fit: cover;
+            }
+            &__input{
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                border-radius: 50%;
+                opacity:0.0;
+                filter: alpha(opacity=0);
+               
+            }
+        }
+        &__title{
+            color: map-get($colors, white );
+            border-bottom: 1px solid map-get($colors, blue-1);
+            padding-bottom: 10px;
+            width: 100%;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        &__btn{
+            width:48%;
+            border-radius: 16px;
+            color: map-get($colors, white);
+            background-color: map-get($colors, blue-2);
+            border: 0;
+            padding: 18px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        &-remove{
+            background-color: map-get($colors, red);  
+        }
+        }
+    }
+}       
